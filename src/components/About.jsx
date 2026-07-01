@@ -1,5 +1,5 @@
 import React from 'react';
-import mypicture from '../mypicture.jpeg'; // Adjust the path as necessary
+// import mypicture from '../mypicture.jpeg'; // Adjust the path as necessary
 
 export default function About() {
   return (
@@ -76,13 +76,13 @@ export default function About() {
                 </div>
 
                 {/* Initials */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                 <img 
-                    src="/mypicture.jpeg" 
-                    alt="My Profile" 
-                   className="w-full h-full object-cover" 
-                  />
-                </div>
+<div className="absolute inset-0 flex items-center justify-center">
+  <img 
+    src={`${import.meta.env.BASE_URL}mypicture.jpeg`} // 👈 This dynamically handles the /my-port/ path
+    alt="My Profile" 
+    className="w-full h-full object-cover" 
+  />
+</div>
 
                 {/* Corner decorations */}
                 <div className="absolute top-4 left-4 w-6 h-6 border-t border-l border-lime/50" />
