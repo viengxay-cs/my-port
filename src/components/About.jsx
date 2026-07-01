@@ -1,3 +1,6 @@
+import React from 'react';
+import mypicture from '../mypicture.jpeg'; // Adjust the path as necessary
+
 export default function About() {
   return (
     <section id="about" className="relative py-32 px-8 md:px-16 border-t border-paper/8">
