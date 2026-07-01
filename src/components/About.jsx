@@ -1,5 +1,5 @@
 import React from 'react';
-// import mypicture from '../mypicture.jpeg'; // Adjust the path as necessary
+import profilePic from '../mypicture.jpeg'; // Adjust the path as necessary
 
 export default function About() {
   return (
@@ -78,7 +78,7 @@ export default function About() {
                 {/* Initials */}
 <div className="absolute inset-0 flex items-center justify-center">
   <img 
-    src={`${import.meta.env.BASE_URL}mypicture.jpeg`} // 👈 This dynamically handles the /my-port/ path
+    src={profilePic} // 👈 Change this to use the imported profilePic variable!
     alt="My Profile" 
     className="w-full h-full object-cover" 
   />
